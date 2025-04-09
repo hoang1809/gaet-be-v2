@@ -54,17 +54,6 @@
         }
       }
     },
-    "partners": {
-      "displayName": "partner",
-      "type": "component",
-      "repeatable": true,
-      "component": "about.partner",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "features": {
       "type": "component",
       "repeatable": true,
