@@ -1,0 +1,59 @@
+{
+  "kind": "singleType",
+  "collectionName": "vision_pages",
+  "info": {
+    "singularName": "vision-page",
+    "pluralName": "vision-pages",
+    "displayName": "Vision page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "vision": {
+      "type": "text",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "mission": {
+      "type": "text",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "core_values": {
+      "displayName": "value",
+      "type": "component",
+      "repeatable": true,
+      "component": "about.value",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "objectives": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about.name-card",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

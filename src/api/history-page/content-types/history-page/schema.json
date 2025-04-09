@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "history_pages",
+  "info": {
+    "singularName": "history-page",
+    "pluralName": "history-pages",
+    "displayName": "History page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "history_of_development": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "milestones": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about.history",
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "achievements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about.achievement",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

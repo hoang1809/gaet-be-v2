@@ -1,0 +1,58 @@
+{
+  "kind": "singleType",
+  "collectionName": "organization_pages",
+  "info": {
+    "singularName": "organization-page",
+    "pluralName": "organization-pages",
+    "displayName": "Organization page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "description": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "directly_affiliated_agencies": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about.name-card",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "subsidiary_companies": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about.name-card",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "representative_offices": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about.name-card",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

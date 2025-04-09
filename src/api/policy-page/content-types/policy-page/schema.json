@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "policy_pages",
+  "info": {
+    "singularName": "policy-page",
+    "pluralName": "policy-pages",
+    "displayName": "Policy page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "content": {
+      "type": "blocks",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
