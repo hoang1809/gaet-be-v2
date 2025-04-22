@@ -12,6 +12,17 @@ export interface AboutAchievement extends Struct.ComponentSchema {
   };
 }
 
+export interface AboutBanner extends Struct.ComponentSchema {
+  collectionName: 'components_about_banners';
+  info: {
+    displayName: 'Banner';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    url: Schema.Attribute.String;
+  };
+}
+
 export interface AboutFeature extends Struct.ComponentSchema {
   collectionName: 'components_about_features';
   info: {
@@ -96,6 +107,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'about.achievement': AboutAchievement;
+      'about.banner': AboutBanner;
       'about.feature': AboutFeature;
       'about.history': AboutHistory;
       'about.leader': AboutLeader;

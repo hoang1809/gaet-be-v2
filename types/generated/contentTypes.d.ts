@@ -581,6 +581,7 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
     };
   };
   attributes: {
+    banners: Schema.Attribute.Component<'about.banner', true>;
     business_description: Schema.Attribute.Text &
       Schema.Attribute.SetPluginOptions<{
         i18n: {

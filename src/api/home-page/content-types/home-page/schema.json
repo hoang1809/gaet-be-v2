@@ -63,6 +63,11 @@
           "localized": true
         }
       }
+    },
+    "banners": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about.banner"
     }
   }
 }
