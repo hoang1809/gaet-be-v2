@@ -38,7 +38,7 @@
       "type": "string",
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       }
     },
@@ -78,6 +78,12 @@
           "localized": false
         }
       }
+    },
+    "email": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
     }
   }
 }

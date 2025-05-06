@@ -4,7 +4,8 @@
   "info": {
     "singularName": "gallery",
     "pluralName": "galleries",
-    "displayName": "Gallery"
+    "displayName": "Gallery",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -15,29 +16,31 @@
       "required": true
     },
     "cover": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "type": {
       "type": "enumeration",
       "enum": [
         "image",
-        "video"
+        "video",
+        "file"
       ],
       "required": true
     },
     "media": {
-      "allowedTypes": [
-        "images",
-        "videos"
-      ],
       "type": "media",
       "multiple": true,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos",
+        "files"
+      ]
     }
   }
 }

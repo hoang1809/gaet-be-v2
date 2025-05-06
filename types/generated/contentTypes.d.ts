@@ -517,6 +517,7 @@ export interface ApiBusinessBusiness extends Struct.CollectionTypeSchema {
 export interface ApiGalleryGallery extends Struct.CollectionTypeSchema {
   collectionName: 'galleries';
   info: {
+    description: '';
     displayName: 'Gallery';
     pluralName: 'galleries';
     singularName: 'gallery';
@@ -535,11 +536,11 @@ export interface ApiGalleryGallery extends Struct.CollectionTypeSchema {
       'api::gallery.gallery'
     > &
       Schema.Attribute.Private;
-    media: Schema.Attribute.Media<'images' | 'videos', true> &
+    media: Schema.Attribute.Media<'images' | 'videos' | 'files', true> &
       Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
     title: Schema.Attribute.String & Schema.Attribute.Required;
-    type: Schema.Attribute.Enumeration<['image', 'video']> &
+    type: Schema.Attribute.Enumeration<['image', 'video', 'file']> &
       Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -733,7 +734,7 @@ export interface ApiMemberMember extends Struct.CollectionTypeSchema {
     address: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
-          localized: true;
+          localized: false;
         };
       }>;
     createdAt: Schema.Attribute.DateTime;
@@ -746,6 +747,7 @@ export interface ApiMemberMember extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
+    email: Schema.Attribute.String;
     fax: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -783,6 +785,7 @@ export interface ApiMemberMember extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    website: Schema.Attribute.String;
   };
 }
 
